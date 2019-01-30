@@ -438,3 +438,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.superior.maintainer=Mayur Varde
+
+# Disable touch heatmap
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.input.video_enabled=false
