@@ -26,7 +26,7 @@ $(call inherit-product, device/motorola/sanders/device.mk)
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 
 # Inherit some Common Rom Stuff.
-$(call inherit-product, vendor/havoc/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -34,11 +34,11 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := havoc_sanders
+PRODUCT_NAME := aosp_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
+PRODUCT_SYSTEM_PROPERTY := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto G5S Plus" \
@@ -47,3 +47,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # FINGERPRINT
 BUILD_FINGERPRINT := google/walleye/walleye:9/PPP3.180510.008/4811556:user/release-keys
 VENDOR_BUILD_FINGERPRINT := google/walleye/walleye:9/PPP3.180510.008/4811556:user/release-keys
+
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES_EVO := true
