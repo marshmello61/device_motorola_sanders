@@ -469,7 +469,7 @@ public class KeyHandler implements DeviceKeyHandler {
                 processFPScancode(scanCode);
             }
         }
-        return true;
+                return null;
             }
 
 	    public boolean canHandleKeyEvent(KeyEvent event) {
@@ -505,7 +505,7 @@ public class KeyHandler implements DeviceKeyHandler {
 	    }
 
 	    public Intent isActivityLaunchEvent(KeyEvent event) {
-        return null;
+                return null;
     }
 
     private void processFPScancode(int scanCode) {
