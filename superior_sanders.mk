@@ -26,23 +26,22 @@ $(call inherit-product, device/motorola/sanders/device.mk)
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 
 # Inherit some Common Rom Stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Boot animation
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 1920
+TARGET_BOOTANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := aosp_sanders
+PRODUCT_NAME := superior_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := Moto G5s Plus
 
-PRODUCT_SYSTEM_PROPERTY := ro.product.model
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Moto G5S Plus" \
+    PRODUCT_NAME="Moto G5s Plus" \
     PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36 9fea release-keys"
 
 # FINGERPRINT
