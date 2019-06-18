@@ -29,7 +29,7 @@ $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 $(call inherit-product, vendor/superior/config/common.mk)
 
 # Boot animation
-TARGET_BOOTANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
