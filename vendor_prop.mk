@@ -398,7 +398,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.swap=true
 
-# Properties
+# PROPERTIES
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.fha_enable=true \
     ro.sys.fw.bg_apps_limit=32 \
@@ -413,3 +413,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.superior.maintainer=Mayur Varde
+
+# GPS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.location.osnlp.region.package=com.google.android.gms
