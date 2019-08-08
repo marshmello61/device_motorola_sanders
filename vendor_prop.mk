@@ -390,11 +390,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.model=sanders
 
-# Spectrum
-PRODUCT_PROPERTY_OVERRIDES += \
-    spectrum.support=1 \
-    persist.spectrum.kernel=Unravel-2.0
-
 # Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.swap=true
