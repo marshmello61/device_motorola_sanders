@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/aosip_sanders.mk
+	$(LOCAL_DIR)/superior_sanders.mk
 
 COMMON_LUNCH_CHOICES := \
-	aosip_sanders-userdebug
+	superior_sanders-userdebug
