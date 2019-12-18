@@ -476,6 +476,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CarrierConfig
 
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    Via \
+    Wallpapers
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
