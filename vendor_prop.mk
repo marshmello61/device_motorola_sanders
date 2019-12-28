@@ -80,6 +80,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.eis.enable=1 \
     persist.camera.HAL3.enabled=1 \
     persist.camera.is_mode=4 \
+    persist.camera.is_type=5 \
+    persist.camera.gzoom.at=0 \
+    0persist.camera.googfd.enable=1
     camera.is_mode=4 \
     persist.camera.disable_zsl_mode=1 \
     camera.disable_zsl_mode=1 \
@@ -137,6 +140,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.image-dex2oat-threads=4 \
     dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.image-dex2oat-filter=speed \
+
+# SurfaceFlinger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.protected_contents=true
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
